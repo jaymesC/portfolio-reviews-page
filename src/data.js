@@ -39,17 +39,3 @@ export const data = [
     position: "THE BOSS",
   },
 ];
-
-
-// console.log(data[1].position);
-var min = 0,
-    max = 10,
-    step = +1,
-    now = 0; 
-
-var timer = setInterval(function(){
-    if(now >= max) {step = -10;}
-    if(now <= min) {step = +1;}
-    now += step;
-    // console.log(now);
-}, 1000);
