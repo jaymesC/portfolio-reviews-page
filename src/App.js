@@ -24,22 +24,13 @@ function App() {
   //   now = 0;
 
   const counterFunc = () => {
-    if (cards >= data.length - 1) {
-      setCards(cards - 3);
-      console.log(cards);
-    } else {
-      setCards(cards + 1);
-      console.log(cards);
-    }
-  };
+
+    cards >= data.length -1 ? setCards(cards - 3) : setCards(cards + 1)
+  }
 
   const counterFun = function () {
-    if (cards <= data.length - 4) {
-      setCards(cards + 3);
-      console.log(cards);
-    } else {
-      setCards(cards - 1)
-    }
+    cards <= data.length-4 ? setCards(cards + 3) : setCards(cards - 1);
+
   };
 
   return (
