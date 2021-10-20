@@ -5,18 +5,6 @@ import { data } from "./data";
 
 function App() {
   const [cards, setCards] = useState(0);
-  // // const [show, setShow] = useState('show');
-  // const [text, setText] = useState("show");
-  // const [isLoading, setIsLoading] = useState(true);
-
-  // const removeItem = (id) => {
-  //   let newCards = cards.filter((card) => card.id !== id);
-  //   setCards(newCards);
-  // };
-
-  const surpriseFunc = () => {
-    setCards(Math.trunc(Math.random() * 4));
-  };
 
 
   return (
@@ -32,7 +20,7 @@ function App() {
             <ChevronLeftIcon className="icon" onClick={() => cards >= data.length -1 ? setCards(cards - 3) : setCards(cards + 1)} />
             <ChevronRightIcon className="icon" onClick={() => {cards <= data.length-4 ? setCards(cards + 3) : setCards(cards - 1)}} />
           </div>
-          <button className="btn" onClick={surpriseFunc}>
+          <button className="btn" onClick={() => {setCards(Math.trunc(Math.random() * 4))}}>
             Surprise me
           </button>
         </div>
