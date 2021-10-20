@@ -18,20 +18,6 @@ function App() {
     setCards(Math.trunc(Math.random() * 4));
   };
 
-  // let min = 0,
-  //   max = 10,
-  //   step = +1,
-  //   now = 0;
-
-  const counterFunc = () => {
-
-    cards >= data.length -1 ? setCards(cards - 3) : setCards(cards + 1)
-  }
-
-  const counterFun = function () {
-    cards <= data.length-4 ? setCards(cards + 3) : setCards(cards - 1);
-
-  };
 
   return (
     <div className="header">
@@ -43,8 +29,8 @@ function App() {
           <h5>{data[cards].position}</h5>
           <p>{data[cards].description}</p>
           <div className="navigation">
-            <ChevronLeftIcon className="icon" onClick={counterFunc} />
-            <ChevronRightIcon className="icon" onClick={counterFun} />
+            <ChevronLeftIcon className="icon" onClick={() => cards >= data.length -1 ? setCards(cards - 3) : setCards(cards + 1)} />
+            <ChevronRightIcon className="icon" onClick={() => {cards <= data.length-4 ? setCards(cards + 3) : setCards(cards - 1)}} />
           </div>
           <button className="btn" onClick={surpriseFunc}>
             Surprise me
