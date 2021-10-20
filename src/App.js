@@ -17,8 +17,8 @@ function App() {
           <h5>{data[cards].position}</h5>
           <p>{data[cards].description}</p>
           <div className="navigation">
-            <ChevronLeftIcon className="icon" onClick={() => cards >= data.length -1 ? setCards(cards - 3) : setCards(cards + 1)} />
-            <ChevronRightIcon className="icon" onClick={() => {cards <= data.length-4 ? setCards(cards + 3) : setCards(cards - 1)}} />
+            <button onClick={() => cards >= data.length -1 ? setCards(cards - 3) : setCards(cards + 1)}><ChevronLeftIcon className="icon"/></button>
+            <button onClick={() => {cards <= data.length-4 ? setCards(cards + 3) : setCards(cards - 1)}}><ChevronRightIcon className="icon"  /></button>
           </div>
           <button className="btn" onClick={() => {setCards(Math.trunc(Math.random() * 4))}}>
             Surprise me
