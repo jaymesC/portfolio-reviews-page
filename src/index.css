@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  background: #F1F5F8;
+  color: #222;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 5rem;
+  background-color: #fff;
+  width: 40rem;
+  height: 28rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 2px 12px -2px #a19f9f;
+  border-radius: 5px;
+}
+
+.card p {
+  color: #817f7f;
+  margin-bottom: 5px;
+}
+
+.card h5 {
+  padding-top: 4px;
+  padding-bottom: 6px;
+  color: #49a6e9;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+
+.card img {
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  align-self: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 8px -6px 0px 0px #49a6e9;
+  object-fit: cover;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.icon {
+  height: 2.3rem;
+  color: #60b0e9;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.icon:hover{
+  transition: all 0.5s ease;
+  color: #4495ce;
+}
+
+.btn {
+  padding-top:7px;
+  padding-bottom: 7px;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 5rem;
+  color: #49a6e9;
+  background-color: #dce9f7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  transition: all 0.5s ease;
+  color: #000;
+  background-color: #83c1eb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid; 
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.book p {
+  margin-top: 0.5rem;
+} */
